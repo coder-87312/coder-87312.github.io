@@ -13,11 +13,11 @@
 <body>
     <div class="NavBar">
         <a href="#" class="BrandName">Estore</a>
-        <button class="Toggler" id="NavToggleBtn">X</button>
+        <button class="Toggler" id="NavToggleBtn"><i class="fa fa-bars"></i></button>
         <div class="NavBar_Content">
             <div class="NavTitleBar">
                 <h2>EStore</h2>
-                <button class="hamburger">X</button>
+                <button class="closeNavBtn"><i class="fa fa-close"></i></button>
             </div>
             <a href="" class="NavLink">Home</a>
             <div class="DropDown">
@@ -35,11 +35,11 @@
         </div>
     </div>
     <script>
-        const hamburger = document.querySelector(".hamburger");
+        const closeNavBtn = document.querySelector(".closeNavBtn");
         const NavToggleBtn = document.getElementById("NavToggleBtn");
         const NavBar_Content = document.querySelector(".NavBar_Content");
         // const navLink = document.querySelectorAll(".nav-link");
-        hamburger.addEventListener("click", closeMenu);
+        closeNavBtn.addEventListener("click", closeMenu);
         NavToggleBtn.addEventListener("click", mobileMenu);
         // navLink.forEach(n => n.addEventListener("click", closeMenu));
 
